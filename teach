@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>輕鬆學化妝</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+  <body class="container">
+  	<header>
+  		<h2 class="col-md-3">輕鬆學化妝</h2>
+  		<nav class="navbar navbar-inverse col-md-6">
+  			<div class="">
+      				<ul class="nav navbar-nav">
+      					<li><a href="#"> 美妝教學總覽</a></li>
+        				<li class="dropdown">
+          				<a class="dropdown-toggle" data-toggle="dropdown" href="#">化妝小知識<span class="caret"></span></a>
+          				<ul class="dropdown-menu">
+            				<li><a href="#">專業術語</a></li>
+            				<li><a href="#">同功能產品比較</a></li>
+          				</ul>
+        				</li>
+        				<li class="dropdown">
+          				<a class="dropdown-toggle" data-toggle="dropdown" href="#">彩妝介紹<span class="caret"></span></a>
+          				<ul class="dropdown-menu">
+            				<li><a href="#">化妝品</a></li>
+            				<li><a href="#">工具</a></li>
+          				</ul>
+        				</li>
+        				<li class="dropdown">
+          				<a class="dropdown-toggle" data-toggle="dropdown" href="#">部位找妝<span class="caret"></span></a>
+          				<ul class="dropdown-menu">
+            				<li><a href="#">底妝</a></li>
+            				<li><a href="#">眼睛</a></li>
+            				<li><a href="#">眉毛</a></li>
+            				<li><a href="#">唇</a></li>
+          				</ul>
+        				</li>
+        				<li class="dropdown">
+          				<a class="dropdown-toggle" data-toggle="dropdown" href="#">情境妝容<span class="caret"></span></a>
+          				<ul class="dropdown-menu">
+            				<li><a href="#">季節</a></li>
+            				<li><a href="#">場合</a></li>
+          				</ul>
+        				</li>
+      				</ul>
+    		</div>
+			</nav>
+			<button>FB</button>
+			<button>推特</button>
+			<button>search</button>
+  	</header>
+
+
+    <section>
+      
+      <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <div  align="right">
+        <span class="label label-default">特色1</span> <span class="label label-default">特色2</span>
+      </div>
+      <h3 aling="left">
+        美妝教學文
+      </h3>
+      </div>
+   </div>
+   <div class="row clearfix">
+     <div class="col-md-4 column">
+        <img src="http://lorempixel.com/140/140/" width=320px height=420px />
+      </div>
+      <div class="col-md-6 column">
+        <table class="table">
+          <tr>
+            <td align="center">
+              情境
+            </td>
+            <td>
+              上課
+            </td>
+          </tr>
+          <tr>
+            <td align="center"> 
+              眼影
+            </td>
+            <td>
+              ？？？
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              腮紅
+            </td>
+            <td>
+              ？？？
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              唇彩
+            </td>
+            <td>
+              ？？？
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              臉型
+            </td>
+            <td>
+              圓
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              眼型
+            </td>
+            <td>
+              狹長
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text-left">描述妝容
+      </p>
+    </div>
+    <div class="col-md-2 column">
+       <button type="button" class="btn btn-default">部落格版</button> 
+       <button type="button" class="btn btn-default">分享教學</button> 
+       <br>
+       <span class="label label-default">瀏覽人次</span> 
+       <br>
+       <span class="label label-default">＃步驟</span>
+    </div>
+  </div>
+  <div>
+      <h3>
+        步驟不藏私大公開
+      </h3>
+      <hr>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-4 column" style="height:500px">
+      <h3 align="center">PRODUCT</h3>
+      <img width=240px src="http://lorempixel.com/140/140/" />
+      <h4>
+        使用產品名稱
+      </h4>
+    </div>
+    <div class="col-md-8 column" style="height:500px">
+      <h3 align="center">STEPS</h3>
+      <img width=640px height=300px src="http://lorempixel.com/140/140/" />
+      <p>
+        步驟說明
+      </p>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-4 column"style="height:500px">
+      <img width=240px src="http://lorempixel.com/140/140/" />
+      <h4>
+        使用產品名稱
+      </h4>
+    </div>
+    <div class="col-md-8 column"style="height:500px">
+      <img width=640px height=300px src="http://lorempixel.com/140/140/" />
+      <p>
+        步驟說明
+      </p>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-4 column"style="height:500px">
+      <img width=240px src="http://lorempixel.com/140/140/" />
+      <h4>
+        使用產品名稱
+      </h4>
+    </div>
+    <div class="col-md-8 column"style="height:500px">
+      <img width=640px height=300px src="http://lorempixel.com/140/140/" />
+      <p>
+        步驟說明
+      </p>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-4 column"style="height:500px">
+      <img width=240px src="http://lorempixel.com/140/140/" />
+      <h4>
+        使用產品名稱
+      </h4>
+    </div>
+    <div class="col-md-8 column"style="height:500px">
+      <img width=640px height=300px src="http://lorempixel.com/140/140/" />
+      <p>
+        步驟說明
+        </p>
+    </div>
+  </div>
+  <div>
+      <h3>
+        ＦＩＮＩＳＨ
+        <div align="right">
+      <button type="button" class="btn btn-default">部落格版</button> <button type="button" class="btn btn-default">分享教學</button>
+    </div>
+    </h1>
+    <hr>
+  </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-4 column">
+      <img width=320px src="http://lorempixel.com/140/140/" />
+    </div>
+    <div class="col-md-4 column">
+      <img width=320px src="http://lorempixel.com/140/140/" />
+    </div>
+    <div class="col-md-4 column">
+      <img width=320px src="http://lorempixel.com/140/140/" />
+    </div>
+  </div>
+  <div>
+      <h3>
+        Ｉ ＵＳＥＤ
+      </h3>
+      <hr>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-4 column">
+      <img width=240px src="http://lorempixel.com/140/140/" />
+      <dl>
+        describe
+      </dl>
+    </div>
+    <div class="col-md-4 column">
+      <img width=240px src="http://lorempixel.com/140/140/" />
+      <dl>
+        describe
+      </dl>
+    </div>
+    <div class="col-md-4 column">
+      <img width=240px src="http://lorempixel.com/140/140/" />
+      <dl>
+        describe
+      </dl>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            討論區
+          </h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+        <div class="panel-footer">
+          Panel footer
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+      <h3>
+        ＯＴＨＥＲＳ
+      </h3>
+      <hr>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-md-3 column">
+      <img alt="140x140" src="http://lorempixel.com/140/140/" />
+      <dl>
+        <dt>
+          Description lists
+        </dt>
+        <dd>
+          A description list is perfect for defining terms.
+        </dd>
+        <dt>
+          Euismod
+        </dt>
+        <dd>
+          Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+        </dd>
+        <dd>
+          Donec id elit non mi porta gravida at eget metus.
+        </dd>
+        <dt>
+          Malesuada porta
+        </dt>
+        <dd>
+          Etiam porta sem malesuada magna mollis euismod.
+        </dd>
+        <dt>
+          Felis euismod semper eget lacinia
+        </dt>
+        <dd>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        </dd>
+      </dl>
+    </div>
+    <div class="col-md-3 column">
+      <img alt="140x140" src="http://lorempixel.com/140/140/" />
+      <dl>
+        <dt>
+          Description lists
+        </dt>
+        <dd>
+          A description list is perfect for defining terms.
+        </dd>
+        <dt>
+          Euismod
+        </dt>
+        <dd>
+          Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+        </dd>
+        <dd>
+          Donec id elit non mi porta gravida at eget metus.
+        </dd>
+        <dt>
+          Malesuada porta
+        </dt>
+        <dd>
+          Etiam porta sem malesuada magna mollis euismod.
+        </dd>
+        <dt>
+          Felis euismod semper eget lacinia
+        </dt>
+        <dd>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        </dd>
+      </dl>
+    </div>
+    <div class="col-md-3 column">
+      <img alt="140x140" src="http://lorempixel.com/140/140/" />
+      <dl>
+        <dt>
+          Description lists
+        </dt>
+        <dd>
+          A description list is perfect for defining terms.
+        </dd>
+        <dt>
+          Euismod
+        </dt>
+        <dd>
+          Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+        </dd>
+        <dd>
+          Donec id elit non mi porta gravida at eget metus.
+        </dd>
+        <dt>
+          Malesuada porta
+        </dt>
+        <dd>
+          Etiam porta sem malesuada magna mollis euismod.
+        </dd>
+        <dt>
+          Felis euismod semper eget lacinia
+        </dt>
+        <dd>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        </dd>
+      </dl>
+    </div>
+    <div class="col-md-3 column">
+      <img alt="140x140" src="http://lorempixel.com/140/140/" />
+      <dl>
+        <dt>
+          Description lists
+        </dt>
+        <dd>
+          A description list is perfect for defining terms.
+        </dd>
+        <dt>
+          Euismod
+        </dt>
+        <dd>
+          Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+        </dd>
+        <dd>
+          Donec id elit non mi porta gravida at eget metus.
+        </dd>
+        <dt>
+          Malesuada porta
+        </dt>
+        <dd>
+          Etiam porta sem malesuada magna mollis euismod.
+        </dd>
+        <dt>
+          Felis euismod semper eget lacinia
+        </dt>
+        <dd>
+          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+</section>
+
+  </body>
+ </html>
