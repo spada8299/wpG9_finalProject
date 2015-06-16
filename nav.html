@@ -2,57 +2,74 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>輕鬆學化妝</title>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <title>輕鬆學化妝 | EASY Makeup</title>
+    
+    <link rel="stylesheet" href="css/foundation.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  	
   </head>
+  <style type="text/css">
+    .has-dropdown:hover .dropdown {
+      display: block;
+      margin-top: 0; // remove the gap so it doesn't close
+    }
+  </style>
   <body class="container">
   	<header class="row">
-      <h2 class="col-md-3">輕鬆學化妝</h2>
-      <nav class="navbar navbar-inverse col-md-6">
-        <div class="">
-              <ul class="nav navbar-nav">
+      <a rel="nofollow" class="col-md-12 logo"><img src="http://www.logomaker.com/logo-images/c94389c19c3393bc.gif"/></a>
+      <div class="contain-to-grid sticky">
+      <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+        <ul class="title-area">
+    <li class="name">
+      <h1><a href="#"></a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+        <section class="col-md-offset-2 col-md-8 top-bar-section">
+              <ul class="left">
+                <li><a href="homepage.html"> 輕鬆學化妝</a></li>
                 <li><a href="transition.html"> 美妝教學總覽</a></li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">化妝小知識<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+                <li class="has-dropdown not-click">
+                  <a href="#">化妝小知識</a>
+                  <ul class="dropdown">
                     <li><a href="transition.html">專業術語</a></li>
                     <li><a href="transition.html">同功能產品比較</a></li>
                   </ul>
                 </li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">彩妝介紹<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+                <li class="has-dropdown not-click">
+                  <a href="#">彩妝介紹</a>
+                  <ul class="dropdown">
                     <li><a href="transition_nav.html">化妝品</a></li>
                     <li><a href="transition.html">工具</a></li>
                   </ul>
                 </li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">部位找妝<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+                <li class="has-dropdown not-click">
+                  <a href="#">部位找妝</a>
+                  <ul class="dropdown">
                     <li><a href="transition.html">底妝</a></li>
                     <li><a href="transition.html">眼睛</a></li>
                     <li><a href="transition.html">眉毛</a></li>
                     <li><a href="transition.html">唇</a></li>
                   </ul>
                 </li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">情境妝容<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+                <li class="has-dropdown not-click">
+                  <a href="#">情境妝容</a>
+                  <ul class="dropdown">
                     <li><a href="transition_nav.html">季節</a></li>
                     <li><a href="transition_nav.html">場合</a></li>
                   </ul>
                 </li>
               </ul>
-        </div>
+          <button>FB</button>
+          <button>推特</button>
+          <button>search</button>
+        </section>
       </nav>
-      <div class="col-md-3">
-       <button>FB</button>
-       <button>推特</button>
-       <button>search</button>
       </div>
     </header>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.topbar.js"></script>
   </body>
  </html>
