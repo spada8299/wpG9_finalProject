@@ -4,8 +4,8 @@ a, a:hover {
 
 .nav-inline>li{
 	display: inline;
-	padding: 0;
-	/*float: left;*/
+/*	padding: 0;
+*/	/*float: left;*/
 }
 
 .nav-block, .nav-block>ul>li{
@@ -80,4 +80,27 @@ footer {
 
 footer a {
 	color: #fff;
+}
+
+nav {
+	height: 100px;
+	background-color: #444;
+}
+
+nav>ul {
+	padding-top: 70px;
+}
+
+li.nav-item {
+	text-align: center;
+	padding: 12px 20px;
+}
+
+li.nav-item:hover {
+	background-color: #111;
+}
+
+li.nav-item>a {
+	color: #fff;
+	margin-bottom: 10px;
 }

@@ -4,4 +4,7 @@ $(document).ready(function(){
         },
         function() { $('.nav-dropdown-menu', this).fadeOut("fast");
     });
+    $("#openAllProduct").on('click', function(){
+    	$(".all-product").slideToggle('fast');
+    });
 });
