@@ -69,3 +69,15 @@ a, a:hover {
 .mega-title a{
 	color: #FFDDAA;
 }
+
+footer {
+	float: right;
+	background-color: #444;
+	opacity: 0.6;
+	color: #fff;
+	width: 100%;
+}
+
+footer a {
+	color: #fff;
+}
