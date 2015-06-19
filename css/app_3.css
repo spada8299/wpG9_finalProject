@@ -150,3 +150,8 @@ li.nav-item>a {
 	border-radius: 1em;
 	margin-top: 10px;
 }
+
+.other-pic {
+	width: 300px;
+	height: 300px;
+}
