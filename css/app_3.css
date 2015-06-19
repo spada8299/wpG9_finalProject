@@ -42,7 +42,7 @@ a, a:hover {
 	padding: 10px 0px;
 	width: 65%;
 	margin-top: 10px;
-	margin-left: 180px;
+	margin-left: 0px;
 	display: none;
 }
 
@@ -83,12 +83,17 @@ footer a {
 }
 
 nav {
-	height: 100px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	height: 40px;
 	background-color: #111;
 }
 
 nav>ul {
-	padding-top: 70px;
+	padding-top: 10px;
+	padding-left: 20%;
 }
 
 li.nav-item {
