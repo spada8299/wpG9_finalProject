@@ -82,12 +82,12 @@ footer a {
 	color: #fff;
 }
 
-nav {
+nav.nav_3 {
 	height: 100px;
 	background-color: #444;
 }
 
-nav>ul {
+nav.nav_3>ul {
 	padding-top: 70px;
 }
 
