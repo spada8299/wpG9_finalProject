@@ -55,6 +55,8 @@ a, a:hover {
 	float: left;
 	font-size: 0.94rem;
 	padding: 3px 0px;
+	color: #fff;
+	cursor: pointer;
 }
 
 .mega-menu li.mega-menu-column {
@@ -173,8 +175,8 @@ li.nav-item>a {
 }
 
 .edu-card-pic {
-	width: 270px;
-	height: 360px;
+	width: 250px;
+/*	height: 360px;*/
 	padding: 10px 0px;
 }
 

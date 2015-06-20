@@ -55,6 +55,7 @@ a, a:hover {
 	float: left;
 	font-size: 0.94rem;
 	padding: 3px 0px;
+	cursor: pointer;
 }
 
 .mega-menu li.mega-menu-column {

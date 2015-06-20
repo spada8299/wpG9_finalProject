@@ -14,7 +14,7 @@ query.find({
 		console.log(eduObj);
 		var edu = eduObj[0];
 		$('#eduTitle').text(edu.get('title'));
-		// $('#eduDate').text(edu.get('date'));
+		$('#eduDate').text(edu.get('date'));
 		$('#eduBeforePic').attr("src", "img/edu/" + 1 + "-before.png");
 		$('#eduAfterPic').attr("src", "img/edu/" + 1 + "-after.png");
 		var tags = edu.get('tag');
