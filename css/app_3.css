@@ -114,10 +114,10 @@ li.nav-item>a {
 	margin-top: 100px;
 }
 
-#before-pic, #after-pic {
+#eduBeforePic, #eduAfterPic {
 	width: 320px;
-	height: 500px;
-	border: 1px solid;
+	/*height: 500px;
+	border: 1px solid;*/
 }
 
 .sm-square {
@@ -140,14 +140,14 @@ li.nav-item>a {
 }
 
 .product-pic {
-	width: 160px;
-	height: 150px;
+/*	max-width: 160px;*/
+	max-height: 160px;
 	padding: 0;
 }
 
 .step-pic {
-	width: 600px;
-	height: 500px;
+	width: 500px;
+	/*height: 500px;*/
 }
 
 .step-box {

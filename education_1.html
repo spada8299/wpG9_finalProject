@@ -20,8 +20,7 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 		<header>
-			<div>	
-				
+			<div>		
 				<nav>
 					<ul class="nav-inline">
 						<li class="nav-item"><a href="">Beauty Up</a></li>
@@ -167,37 +166,30 @@
 		<section class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<h2>清爽底妝</h2>
-					<p>Date: 2015.6.18</p>
+					<h2 id="eduTitle">清爽底妝</h2>
+					<p id="eduDate">Date: 2015.6.18</p>
 					<div class="col-md-6">
 						<div>Before</div>
-						<img src="11356042_777692802328930_1587988393_n.jpg" id="before-pic">
+						<img src="" id="eduBeforePic">
 					</div>
 					<div class="col-md-6 ">
 						<div>After</div>
-						<img src="11356042_777692802328930_1587988393_n.jpg" id="after-pic">
+						<img src="" id="eduAfterPic">
 					</div>
-					<div class="col-md-12 tags">
+					<div class="col-md-12 tags" id="eduTags">
 							<span>必美秘訣：</span>
-							<a href="" class="btn btn-default">上課</a>
-							<a href="" class="btn btn-default">上班</a>
-							<a href="" class="btn btn-default">底妝</a>
-							<a href="" class="btn btn-default">春</a>
-							<a href="" class="btn btn-default">夏</a>
-							<a href="" class="btn btn-default">大地色</a>
-							<a href="" class="btn btn-default">粉色系</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="body-describe">
-						<span>這次要教各位簡易好上手夏天最適合的不黏膩清爽底妝，上完底妝不論是要直接出門或是要在上妝都很適合呦～</span>
+						<span id="eduDescribe">這次要教各位簡易好上手夏天最適合的不黏膩清爽底妝，上完底妝不論是要直接出門或是要在上妝都很適合呦～</span>
 					</div>
 					<div>
 						<div class="sm-square col-md-4">
-							<span>6</span><br><span>步驟</span>
+							<span id="eduStepCounts"></span><br><span>步驟</span>
 						</div>
 						<div class="sm-square col-md-4">
-							<span>難易度</span><span><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></span>
+							<span>難易度</span><span id="eduEasy"></span>
 						</div>
 					</div>
 					<div>
@@ -205,15 +197,15 @@
 					    <tbody>
 					      <tr>
 					        <th>適合膚色</th>
-					        <td>全部膚色</td>
+					        <td id="eduSkin">全部膚色</td>
 					      </tr>
 					      <tr>
 					      	<th>適合臉型</th>
-					        <td>全部臉型</td>
+					        <td id="eduFaceshape">全部臉型</td>
 					      </tr>
 					      <tr>
 					      	<th>適合眼型</th>
-					        <td>全部眼型</td>
+					        <td id="eduEyestyle">全部眼型</td>
 					      </tr>
 					    </tbody>
 					  </table>
@@ -221,100 +213,24 @@
 					<div>
 						<button class="btn btn-default" id="openAllProduct">使用到的工具</button>
 					</div>
-					<div class="all-product">
-						<img src="" class="col-md-6 product-pic">
-						<img src="" class="col-md-6 product-pic">
-						<img src="" class="col-md-6 product-pic">
-						<img src="" class="col-md-6 product-pic">
-						<img src="" class="col-md-6 product-pic">
-						<img src="" class="col-md-6 product-pic">
+					<div class="all-product" id="eduAllProduct">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-12">
 				<h2>必美秘訣大公開</h2>
 			</div>
-			<div class="col-md-12 step-box">
-				<div>STEP 1</div>
-				<div class="col-md-8">
-					<img src="" class="step-pic">
-					<p class="well well-lg">妝前的保濕工作，在臉上均勻塗抹倩碧的乳液，肌膚有喝飽水的Fu</p>
-					<p></p>
-				</div>
-				<div class="col-md-4">
-					<img src="" class="product-pic">
-					<p>倩碧乳液</p>
-				</div>
+			<div id="eduSteps">
 			</div>
-			<div class="col-md-12 step-box">
-				<div>STEP 2</div>
-				<div class="col-md-8">
-					<img src="" class="step-pic">
-					<p class="well well-lg">使用ZA的美白防曬霜整臉均勻塗抹，擦完有提亮膚色的效果</p>
-					<p></p>
-				</div>
-				<div class="col-md-4">
-					<img src="" class="product-pic">
-					<p>ZA美白防曬霜</p>
-				</div>
+			<div class="col-md-5">
+				<div class="fb-comments" data-href="http://spada8299.github.io/wpG9_finalProject/education_1.html" data-width="600" data-numposts="5"></div>
 			</div>
-			<div class="col-md-12 step-box">
-				<div>STEP 3</div>
-				<div class="col-md-8">
-					<img src="" class="step-pic">
-					<p class="well well-lg">使用水潤光星空飾底乳-珠光來提亮跟調整膚色，塗抹範圍如圖，會讓氣色看起來比較好</p>
-					<p></p>
-				</div>
-				<div class="col-md-4">
-					<img src="" class="product-pic">
-					<p>水潤光星空飾底乳-珠光</p>
-				</div>
-			</div>
-			<div class="col-md-12 step-box">
-				<div>STEP 4</div>
-				<div class="col-md-8">
-					<img src="" class="step-pic">
-					<p class="well well-lg">使用MAC潤澤修暇霜，均勻塗抹在臥蠶下面，範圍不要太靠近眼睛</p>
-					<p class="well well-lg">tip: 用手指頭輕輕拍點開來不要用推的噢!!!</p>
-				</div>
-				<div class="col-md-4">
-					<img src="" class="product-pic">
-					<p>MAC潤澤修暇霜</p>
-				</div>
-			</div>
-			<div class="col-md-12 step-box">
-				<div>STEP 5</div>
-				<div class="col-md-8">
-					<img src="" class="step-pic">
-					<p class="well well-lg">上粉餅，使用	SOFINA蘇菲娜漾緁輕妝綺肌長效粉餅OC03-主打色，從兩頰開始往臉頰側推開</p>
-					<p class="well well-lg">tip: 粉撲輕輕沾一些粉就好，不要一次沾太多,寧願少量多次才不會一次下手就太重變成面具妝</p>
-				</div>
-				<div class="col-md-4">
-					<img src="" class="product-pic">
-					<p>SOFINA蘇菲娜漾緁輕妝綺肌長效粉餅OC03-主打色</p>
-				</div>
-			</div>
-			<div class="col-md-12 step-box">
-				<div>STEP 6</div>
-				<div class="col-md-8">
-					<img src="" class="step-pic">
-					<p class="well well-lg">使用jillstuart腮紅，混合四色刷在笑肌處，像我一樣顴骨比較凸出的女生可以直接在眼睛正下方的位置畫圓，然後向外側暈開</p>
-					<p></p>
-				</div>
-				<div class="col-md-4">
-					<img src="" class="product-pic">
-					<p>jillstuart腮紅</p>
-				</div>
-			</div>
-			<div class="col-md-12 step-box">
+			<div class="col-md-7 step-box">
 				<div>FINISH</div>
-				<div class="col-md-8">
-					<img src="" class="step-pic">
+				<div class="col-md-6">
+					<img src="" class="step-pic" id="finishPic">
 					<p class="well well-lg">完成！</p>
 				</div>
-			</div>
-			<div>
-				<div class="fb-comments" data-href="http://spada8299.github.io/wpG9_finalProject/education_1.html" data-width="600" data-numposts="5"></div>
 			</div>
 			<div class="col-md-12">
 				<h3>其他教學文</h3>	
