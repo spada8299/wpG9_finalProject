@@ -182,13 +182,13 @@ li.nav-item>a {
 
 .pro-card-pic {
 	width: 350px;
-	height: 350px;
+	/*height: 350px;*/
 	padding: 10px 0px;
 }
 
 .know-card-pic {
 	width: 540px;
-	height: 350px;
+	/*height: 350px;*/
 	padding: 10px 0px;
 }
 

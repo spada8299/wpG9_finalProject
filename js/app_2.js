@@ -5,8 +5,6 @@ Parse.initialize("9QneXdZeemlrFssrENAhKZSQ51hEtRGKerQAvhag", "vt92TSBq2yak0SXvvf
 //   alert("yay! it worked");
 // });
 
-var choosenTag, choosenEdu, choosenProduct;
-
 var getEduCard = function (tag) {
 	var Education2 = Parse.Object.extend("education");
 	var query2 = new Parse.Query(Education2);
@@ -233,6 +231,25 @@ var getEduCard = function (tag) {
 }, toPro = function (event){
 	var key = event.data;
 	window.location = 'product_1.html?productname=' + key;
+}, getIndexEdu = function(){
+	var IndexEdu = Parse.Object.extend("education");
+	var query6 = new Parse.Query(IndexEdu);
+	query6.containedIn("title", ["超正女神妝系列→粉紅色淚滴效果的穗花彩妝","電眼美眸祕技大揭露－－假睫毛教學文","簡易日常咬唇妝教學"]);
+	query6.find({
+		success: function(indexEduArray){
+			console.log(indexEduArray);
+			var iEdu = indexEduArray;
+			for(var i=0; i<3; i++){
+				$('#indexEduHref' + (i+1)).attr("href", "education_1.html?title=" + iEdu[i].get('title'));
+				$('#indexEduPic' + (i+1)).attr("src", "img/edu/"+ iEdu[i].get('number') +"-after.jpg");
+				$('#indexEduTitle' + (i+1)).text(iEdu[i].get('title'));
+				$('#indexEduDescribe' + (i+1)).text(iEdu[i].get('describe'));
+			}
+		},
+		error: function(error){
+			alert("error: " + error.message);
+		}
+	});
 };
 
 $(document).ready(function(){

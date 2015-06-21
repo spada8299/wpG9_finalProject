@@ -19,6 +19,15 @@ a, a:hover {
 	display: none;
 }*/
 
+nav, .logo-pic {
+	top: 10px;
+}
+
+nav {
+	float: right;
+	margin-right: 15%;
+}
+
 .nav-pic {
 	width: 120px;
 	height: 120px;
@@ -28,6 +37,7 @@ a, a:hover {
 .logo-pic{
 	width: 300px;
 	height: 100px;
+	margin-left: 12%;
 }
 
 .big-pic{
@@ -40,9 +50,9 @@ a, a:hover {
 	z-index: 999;
 	background-color: #444;
 	padding: 10px 0px;
-	width: 70%;
+	width: 60%;
 	margin-top: 0px;
-	margin-left: 180px;
+	margin-left: -20%;
 	display: none;
 }
 
@@ -104,4 +114,10 @@ li.nav-item:hover {
 li.nav-item>a {
 	color: #fff;
 	margin-bottom: 10px;
+}
+
+#indexEduPic1,
+#indexEduPic2,
+#indexEduPic3 {
+	height: 500px;
 }
