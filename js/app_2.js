@@ -98,7 +98,7 @@ var getEduCard = function (tag) {
 			$('#eduEyestyle').text(edu.get('eyestyle'));
 			var allProducts = edu.get('products');
 			for(var i=0; i<allProducts.length; i++){
-				$('#eduAllProduct').append('<img src="img/product/' + decodeURI(allProducts[i]) + '.jpg" class="col-md-6 product-pic">');
+				$('#eduAllProduct').append('<a href="product_1.html?productname='+ decodeURI(allProducts[i]) +'"><img src="img/product/' + decodeURI(allProducts[i]) + '.jpg" class="col-md-6 product-pic"></a>');
 			}
 			var steps = edu.get('steps');
 			var tips = edu.get('tips');
@@ -111,10 +111,10 @@ var getEduCard = function (tag) {
 						<p class="well well-lg">'+ steps[i] +'</p>\
 						<p></p>\
 					</div>\
-					<div class="col-md-6">\
+					<a href="product_1.html?productname='+ decodeURI(allProducts[i]) +'"><div class="col-md-6">\
 						<img src="img/product/'+ decodeURI(allProducts[i]) +'.jpg" class="product-pic">\
 						<p>'+ allProducts[i] +'</p>\
-					</div>\
+					</div></a>\
 				</div>');
 				} else {
 					$('#eduSteps').append('<div class="col-md-12 step-box">\
@@ -124,10 +124,10 @@ var getEduCard = function (tag) {
 							<p class="well well-lg">'+ steps[i] +'</p>\
 							<p class="well well-lg">Tips: '+ tips[i] +'</p>\
 						</div>\
-						<div class="col-md-6">\
+						<a href="product_1.html?productname='+ decodeURI(allProducts[i]) +'"><div class="col-md-6">\
 							<img src="img/product/'+ decodeURI(allProducts[i]) +'.jpg" class="product-pic">\
 							<p>'+ allProducts[i] +'</p>\
-						</div>\
+						</div></a>\
 					</div>');
 				}
 			}
@@ -137,7 +137,37 @@ var getEduCard = function (tag) {
 			alert("error:" + error.message);
 		}
 	});
-}, getProduct = function () {
+}, getProduct = function (productname) {
+	var Product2 = Parse.Object.extend("product");
+	var query4 = new Parse.Query(Product2);
+	query4.equalTo("productname", productname);
+	query4.find({
+		success: function(proObj){
+			console.log(proObj);
+			var pro = proObj[0];
+			$('#proBigPic').attr("src", "img/product/"+ pro.get('productname') +".jpg");
+			// $('#proSmPic1').attr("src", "img/product/"+ pro.get('productname') +"-1.jpg");
+			// $('#proSmPic2').attr("src", "img/product/"+ pro.get('productname') +"-2.jpg");
+			// $('#proSmPic3').attr("src", "img/product/"+ pro.get('productname') +"-3.jpg");
+			$('#proName').text(pro.get('productname'));
+			$('#proPlace').text(pro.get('place'));
+			$('#proPrice').append('<i class="fa fa-usd"></i>'+ pro.get('price'));
+			var using = pro.get('using');
+			var usingNum = pro.get('using_num');
+			for(var i=0; i<using.length; i++){
+				$('#proToEdu').append('<div class="col-md-4">\
+						<a href="education_1.html?title='+ using[i] +'">\
+							<img src="img/edu/'+ usingNum[i] +'-after.jpg" class="other-pic">\
+							<h5>'+ using[i] +'</h5>\
+						</a>\
+					</div>');
+			}
+				
+		},
+		error: function(error){
+			alert("error: " + error.message);
+		}
+	});
 }, getValue = function (varname) {
 	var url = window.location.href;
   var qparts = url.split("?");

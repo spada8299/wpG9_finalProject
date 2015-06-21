@@ -7,142 +7,147 @@
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  	<script src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/app_3.css">
 		<script type="text/javascript" src="js/app_2.js"></script>
 	</head>
 	<body>
+		<script type="text/javascript">
+		console.log(getValue("productname"));
+		getProduct(getValue("productname"));
+		</script>
 		<header>
 			<div>		
 				<nav>
 					<ul class="nav-inline">
-						<li class="nav-item"><a href="">Beauty Up</a></li>
-						<li class="nav-dropdown nav-item"><a href="">學化妝</a>
+						<li class="nav-item"><a href="index.html">Beauty Up</a></li>
+						<li class="nav-dropdown nav-item edu"><a href="">學化妝</a>
 							<ul class="nav-dropdown-menu mega-menu">
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">部位</a></li><br>
-												<li><a href="">底妝</a></li><br>
-												<li><a href="">眼妝</a></li><br>
-												<li><a href="">遮瑕</a></li><br>
-												<li><a href="">修容</a></li><br>
-												<li><a href="">眉毛</a></li><br>
-												<li><a href="">睫毛</a></li><br>
-												<li><a href="">唇妝</a></li>
+												<li><a>底妝</a></li><br>
+												<li><a>眼妝</a></li><br>
+												<li><a >遮瑕</a></li><br>
+												<li><a >修容</a></li><br>
+												<li><a >眉毛</a></li><br>
+												<li><a >睫毛</a></li><br>
+												<li><a >唇妝</a></li>
 											</ul>
 										</li>
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">場合</a></li><br>
-												<li><a href="">上課</a></li><br>
-												<li><a href="">約會</a></li><br>
-												<li><a href="">上班</a></li><br>
-												<li><a href="">防水</a></li><br>
-												<li><a href="">派對</a></li>
+												<li><a >上課</a></li><br>
+												<li><a >約會</a></li><br>
+												<li><a >上班</a></li><br>
+												<li><a >防水</a></li><br>
+												<li><a >派對</a></li>
 											</ul>
 										</li>
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">風格</a></li><br>
-												<li><a href="">時尚</a></li><br>
-												<li><a href="">韓系</a></li><br>
-												<li><a href="">日系</a></li><br>
-												<li><a href="">歐美</a></li>
+												<li><a >時尚</a></li><br>
+												<li><a >韓系</a></li><br>
+												<li><a >日系</a></li><br>
+												<li><a >歐美</a></li>
 											</ul>
 										</li>
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">色調</a></li><br>
-												<li><a href="">大地色</a></li><br>
-												<li><a href="">水果色</a></li><br>
-												<li><a href="">金屬光澤</a></li><br>
-												<li><a href="">煙燻妝</a></li><br>
-												<li><a href="">粉色系</a></li>
+												<li><a >大地色</a></li><br>
+												<li><a >水果色</a></li><br>
+												<li><a >金屬光澤</a></li><br>
+												<li><a >煙燻妝</a></li><br>
+												<li><a >粉色系</a></li>
 											</ul>
 										</li>
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">季節</a></li><br>
-												<li><a href="">春</a></li><br>
-												<li><a href="">夏</a></li><br>
-												<li><a href="">秋</a></li><br>
-												<li><a href="">冬</a></li>
+												<li><a >春</a></li><br>
+												<li><a >夏</a></li><br>
+												<li><a >秋</a></li><br>
+												<li><a >冬</a></li>
 											</ul>
 										</li>
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">臉型</a></li><br>
-												<li><a href="">圓臉</a></li><br>
-												<li><a href="">方臉</a></li><br>
-												<li><a href="">蛋型臉</a></li><br>
-												<li><a href="">長臉</a></li><br>
-												<li><a href="">瓜子臉</a></li>
+												<li><a >圓臉</a></li><br>
+												<li><a >方臉</a></li><br>
+												<li><a >蛋型臉</a></li><br>
+												<li><a >長臉</a></li><br>
+												<li><a >瓜子臉</a></li>
 											</ul>
 										</li>
 								</ul>
 						</li>
-						<li class="nav-dropdown nav-item">
+						<li class="nav-dropdown nav-item pro">
 							<a href="">化妝箱</a>
 								<ul class="nav-dropdown-menu mega-menu">
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">底妝</a></li><br>
-												<li><a href="">粉餅</a></li><br>
-												<li><a href="">粉撲</a></li><br>
-												<li><a href="">粉底液</a></li><br>
-												<li><a href="">粉底刷</a></li><br>
-												<li><a href="">BB霜</a></li><br>
-												<li><a href="">蜜粉</a></li><br>
-												<li><a href="">蜜粉餅</a></li>
+												<li><a>粉餅</a></li><br>
+												<li><a>粉撲</a></li><br>
+												<li><a >粉底液</a></li><br>
+												<li><a >粉底刷</a></li><br>
+												<li><a >BB霜</a></li><br>
+												<li><a >蜜粉</a></li><br>
+												<li><a >蜜粉餅</a></li>
 											</ul>
 										</li>
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">眼妝</a></li><br>
-												<li><a href="">眼影</a></li><br>
-												<li><a href="">眼影掃</a></li><br>
-												<li><a href="">眼線筆</a></li><br>
-												<li><a href="">眼線液</a></li><br>
-												<li><a href="">眼線膠</a></li><br>
-												<li><a href="">雙眼皮貼</a></li>
+												<li><a >眼影</a></li><br>
+												<li><a >眼影掃</a></li><br>
+												<li><a >眼線筆</a></li><br>
+												<li><a >眼線液</a></li><br>
+												<li><a >眼線膠</a></li><br>
+												<li><a >雙眼皮貼</a></li>
 											</ul>
 										</li>
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">遮瑕修容</a></li><br>
-												<li><a href="">遮瑕筆</a></li><br>
-												<li><a href="">遮瑕膏</a></li><br>
-												<li><a href="">遮瑕霜</a></li><br>
-												<li><a href="">毛孔隱形</a></li><br>
-												<li><a href="">修容餅</a></li>
+												<li><a >遮瑕筆</a></li><br>
+												<li><a >遮瑕膏</a></li><br>
+												<li><a >遮瑕霜</a></li><br>
+												<li><a >毛孔隱形</a></li><br>
+												<li><a >修容餅</a></li>
 											</ul>
 										</li>
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">眉毛</a></li><br>
-												<li><a href="">眉筆</a></li><br>
-												<li><a href="">眉粉</a></li><br>
-												<li><a href="">眉刷</a></li><br>
-												<li><a href="">修眉刀</a></li><br>
-												<li><a href="">染眉膏</a></li>
+												<li><a >眉筆</a></li><br>
+												<li><a >眉粉</a></li><br>
+												<li><a >眉刷</a></li><br>
+												<li><a >修眉刀</a></li><br>
+												<li><a >染眉膏</a></li>
 											</ul>
 										</li>
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">睫毛</a></li><br>
-												<li><a href="">睫毛膏</a></li><br>
-												<li><a href="">睫毛夾</a></li><br>
-												<li><a href="">假睫毛</a></li>
+												<li><a >睫毛膏</a></li><br>
+												<li><a >睫毛夾</a></li><br>
+												<li><a >假睫毛</a></li>
 											</ul>
 										</li>
 										<li class="nav-block mega-menu-column">
 											<ul>
 												<li class="mega-title"><a href="">唇妝</a></li><br>
-												<li><a href="">唇膏</a></li><br>
-												<li><a href="">唇蜜</a></li><br>
-												<li><a href="">唇筆</a></li><br>
-												<li><a href="">護唇膏</a></li><br>
-												<li><a href="">唇萃</a></li><br>
-												<li><a href="">唇釉</a></li>
+												<li><a >唇膏</a></li><br>
+												<li><a >唇蜜</a></li><br>
+												<li><a >唇筆</a></li><br>
+												<li><a >護唇膏</a></li><br>
+												<li><a >唇萃</a></li><br>
+												<li><a >唇釉</a></li>
 											</ul>
 										</li>
 								</ul>
@@ -158,17 +163,17 @@
 		<section class="container">
 			<div class="row">
 				<div class="col-md-6">
-					<img src="" class="pro-bg-pic">
+					<img src="" class="pro-bg-pic" id="proBigPic">
 				</div>
 				<div class="col-md-6">
 					<div class="row">
-						<img src="" class="col-md-4 pro-sm-pic">
-						<img src="" class="col-md-4 pro-sm-pic">
-						<img src="" class="col-md-4 pro-sm-pic">
+						<img src="" class="col-md-4 pro-sm-pic" id="proSmPic1">
+						<img src="" class="col-md-4 pro-sm-pic" id="proSmPic2">
+						<img src="" class="col-md-4 pro-sm-pic" id="proSmPic3">
 					</div>
-					<h2 class="col-md-12 well">倩碧乳液</h2>
-					<h3 class="col-md-12">哪裡買呢<i class="fa fa-question"></i><span class="well right">各大彩妝店,網路賣場,各大專櫃</span></h3>
-					<h3 class="col-md-12">多少錢呢<i class="fa fa-question"></i><span class="well right"><i class="fa fa-usd"></i>1399</span></h3>
+					<h2 class="col-md-12 well" id="proName">倩碧乳液</h2>
+					<h3 class="col-md-12">哪裡買呢<i class="fa fa-question"></i><span class="well right" id="proPlace">各大彩妝店,網路賣場,各大專櫃</span></h3>
+					<h3 class="col-md-12">多少錢呢<i class="fa fa-question"></i><span class="well right" id="proPrice"></span></h3>
 				</div>
 			</div>
 
@@ -177,25 +182,7 @@
 			<div class="col-md-12">
 				<h3>此產品的教學文</h3>	
 			</div>
-			<div class="col-md-12">
-				<div class="col-md-4">
-					<a href="">
-						<img src="" class="other-pic">
-						<h5>推薦教學文1</h5>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="">
-						<img src="" class="other-pic">
-						<h5>推薦教學文2</h5>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="">
-						<img src="" class="other-pic">
-						<h5>推薦教學文3</h5>
-					</a>
-				</div>
+			<div class="col-md-12" id="proToEdu">
 			</div>
 		</section>
 
