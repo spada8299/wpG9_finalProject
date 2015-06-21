@@ -210,9 +210,9 @@ var getEduCard = function (tag) {
 			console.log(proObj);
 			var pro = proObj[0];
 			$('#proBigPic').attr("src", "img/product/"+ pro.get('productname') +".jpg");
-			// $('#proSmPic1').attr("src", "img/product/"+ pro.get('productname') +"-1.jpg");
-			// $('#proSmPic2').attr("src", "img/product/"+ pro.get('productname') +"-2.jpg");
-			// $('#proSmPic3').attr("src", "img/product/"+ pro.get('productname') +"-3.jpg");
+			$('#proSmPic1').attr("src", "img/product/"+ pro.get('productname') +"-1.jpg");
+			$('#proSmPic2').attr("src", "img/product/"+ pro.get('productname') +"-2.jpg");
+			$('#proSmPic3').attr("src", "img/product/"+ pro.get('productname') +"-3.jpg");
 			$('#proName').text(pro.get('productname'));
 			$('#proPlace').text(pro.get('place'));
 			$('#proPrice').append('<i class="fa fa-usd"></i>'+ pro.get('price'));
