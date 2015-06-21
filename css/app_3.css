@@ -148,7 +148,8 @@ li.nav-item>a {
 }
 
 .step-pic {
-	width: 500px;
+	width: 100%;
+	padding: 10px 0px;
 	/*height: 500px;*/
 }
 
@@ -204,4 +205,22 @@ li.nav-item>a {
 
 .right {
 	float: right;
+}
+
+.step-cnt{
+	background-color: #444;
+	color: #fff;
+	font-size: 24px;
+	padding: 5px;
+	width: 12%;
+	border-radius: 0.5em;
+}
+
+.step-cnt-f{
+	background-color: #444;
+	color: #fff;
+	font-size: 24px;
+	padding: 5px;
+	width: 20%;
+	border-radius: 0.5em;
 }

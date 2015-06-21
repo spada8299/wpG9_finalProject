@@ -16,6 +16,9 @@ var getEduCard = function (tag) {
 			$('#transTitle').text("學化妝 - "+ tag);
 			var edu = eduCardArray;
 			for(var i=0; i<edu.length; i++){
+				if(i%2===0 && i!==0){
+					$('#transBody').append('<div class="col-md-12"></div>');
+				}
 				var someText = '<div class="col-md-6 edu-card">\
 					<div class="col-md-6">\
 						<img src="img/edu/'+ edu[i].get('number') +'-after.jpg" class="edu-card-pic">\
@@ -105,37 +108,69 @@ var getEduCard = function (tag) {
 			$('#eduFaceshape').text(edu.get('faceshape'));
 			$('#eduEyestyle').text(edu.get('eyestyle'));
 			var allProducts = edu.get('products');
-			for(var i=0; i<allProducts.length; i++){
-				$('#eduAllProduct').append('<a href="product_1.html?productname='+ decodeURI(allProducts[i]) +'"><img src="img/product/' + decodeURI(allProducts[i]) + '.jpg" class="col-md-6 product-pic"></a>');
+			var unique = allProducts.filter(function(elem, index, self) {
+			  return index === self.indexOf(elem);
+			});
+			for(var i=0; i<unique.length; i++){
+				if(unique[i]==="0"){
+					continue;
+				}
+				$('#eduAllProduct').append('<a href="product_1.html?productname='+ decodeURI(unique[i]) +'"><img src="img/product/' + decodeURI(unique[i]) + '.jpg" class="col-md-6 product-pic"></a>');
 			}
 			var steps = edu.get('steps');
 			var tips = edu.get('tips');
 			for(var i=0; i<steps.length; i++){
-				if(tips[i] === "0"){
-					$('#eduSteps').append('<div class="col-md-12 step-box">\
-						<div>STEP '+ (i+1) +'</div>\
-						<div class="col-md-6">\
+				if(tips[i] === "0" && allProducts[i] !== "0"){ //沒tip,有工具
+					$('#eduSteps').append('<div class="col-md-10 col-md-offset-1 step-box">\
+						<p class="step-cnt">STEP '+ (i+1) +'</p>\
+						<div class="col-md-4">\
 						<img src="img/edu/'+ edu.get('number') +'-'+ (i+1) +'.jpg" class="step-pic">\
-						<p class="well well-lg">'+ steps[i] +'</p>\
-						<p></p>\
 					</div>\
-					<a href="product_1.html?productname='+ decodeURI(allProducts[i]) +'"><div class="col-md-6">\
-						<img src="img/product/'+ decodeURI(allProducts[i]) +'.jpg" class="product-pic">\
-						<p>'+ allProducts[i] +'</p>\
-					</div></a>\
-				</div>');
-				} else {
-					$('#eduSteps').append('<div class="col-md-12 step-box">\
-							<div>STEP '+ (i+1) +'</div>\
-							<div class="col-md-6">\
+					<div class="col-md-8">\
+							<p class="well well-lg">'+ steps[i] +'</p>\
+							<p></p>\
+							<a href="product_1.html?productname='+ decodeURI(allProducts[i]) +'">\
+							<div><img src="img/product/'+ decodeURI(allProducts[i]) +'.jpg" class="product-pic">\
+								<p>'+ allProducts[i] +'</p>\
+							</div></a>\
+						</div>\
+					</div>');
+				} else if(tips[i]==="0" && allProducts[i]==="0"){ //沒tip,沒工具
+					$('#eduSteps').append('<div class="col-md-10 col-md-offset-1 step-box">\
+						<p class="step-cnt">STEP '+ (i+1) +'</p>\
+						<div class="col-md-4">\
+						<img src="img/edu/'+ edu.get('number') +'-'+ (i+1) +'.jpg" class="step-pic">\
+					</div>\
+					<div class="col-md-8">\
+							<p class="well well-lg">'+ steps[i] +'</p>\
+							<p></p>\
+						</div>\
+					</div>');
+				} else if(tips[i]!=="0" && allProducts[i]==="0"){ //有tip,沒工具
+					$('#eduSteps').append('<div class="col-md-10 col-md-offset-1 step-box">\
+							<p class="step-cnt">STEP '+ (i+1) +'</p>\
+							<div class="col-md-4">\
 							<img src="img/edu/'+ edu.get('number') +'-'+ (i+1) +'.jpg" class="step-pic">\
+						</div>\
+						<div class="col-md-8">\
 							<p class="well well-lg">'+ steps[i] +'</p>\
 							<p class="well well-lg">Tips: '+ tips[i] +'</p>\
 						</div>\
-						<a href="product_1.html?productname='+ decodeURI(allProducts[i]) +'"><div class="col-md-6">\
-							<img src="img/product/'+ decodeURI(allProducts[i]) +'.jpg" class="product-pic">\
-							<p>'+ allProducts[i] +'</p>\
-						</div></a>\
+					</div>');
+				} else { //有tip,有工具
+					$('#eduSteps').append('<div class="col-md-10 col-md-offset-1 step-box">\
+							<p class="step-cnt">STEP '+ (i+1) +'</p>\
+							<div class="col-md-4">\
+							<img src="img/edu/'+ edu.get('number') +'-'+ (i+1) +'.jpg" class="step-pic">\
+						</div>\
+						<div class="col-md-8">\
+							<p class="well well-lg">'+ steps[i] +'</p>\
+							<p class="well well-lg">Tips: '+ tips[i] +'</p>\
+							<a href="product_1.html?productname='+ decodeURI(allProducts[i]) +'">\
+							<div><img src="img/product/'+ decodeURI(allProducts[i]) +'.jpg" class="product-pic">\
+								<p>'+ allProducts[i] +'</p>\
+							</div></a>\
+						</div>\
 					</div>');
 				}
 			}
