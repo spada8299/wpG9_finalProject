@@ -60,8 +60,18 @@ var getEduCard = function (tag) {
 	query3.equalTo("tag", tag);
 	query3.find({
 		success: function(proCardArray){
-			alert('success!');
+			// alert('success!');
 			console.log(proCardArray);
+			$('#transTitle').text("化妝箱 - "+ tag);
+			var pro = proCardArray;
+			for(var i=0; i<pro.length; i++){
+				var someText = '<div class="col-md-4 product-card">\
+					<h3>'+ pro[i].get('productname') +'</h3>\
+					<img src="img/product/'+ pro[i].get('productname') +'.jpg" class="pro-card-pic">\
+				</div>';
+     		var newDiv = $(someText).click(pro[i].get('productname'), toPro);
+				$('#transBody').append(newDiv);
+			}
 		},
 		error: function(error){
 			alert("error:" + error.message);
@@ -137,6 +147,27 @@ var getEduCard = function (tag) {
 			alert("error:" + error.message);
 		}
 	});
+
+	var OtherEdu = Parse.Object.extend("education");
+	var query5 = new Parse.Query(OtherEdu);
+	query5.notEqualTo("title", title);
+	query5.find({
+		success: function(otherArray){
+			console.log(otherArray);
+			var other = otherArray;
+			for(var i=0; i<3; i++){
+				$('#eduOther').append('<div class="col-md-4">\
+					<a href="education_1.html?title='+ other[i].get('title') +'">\
+						<img src="img/edu/'+ other[i].get('number') +'-after.jpg" class="other-pic">\
+						<h5>'+ other[i].get('title') +'</h5>\
+					</a>\
+				</div>');
+			}
+		},
+		error: function(error){
+			alert("error:" + error.message);
+		}
+	});
 }, getProduct = function (productname) {
 	var Product2 = Parse.Object.extend("product");
 	var query4 = new Parse.Query(Product2);
@@ -195,10 +226,13 @@ var getEduCard = function (tag) {
 	} else {
 		return '<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>';
 	}
-}, toEdu =  function (event){
+}, toEdu = function (event){
 	// alert(event.data);
 	var key = event.data;
 	window.location = 'education_1.html?title=' + key; 
+}, toPro = function (event){
+	var key = event.data;
+	window.location = 'product_1.html?productname=' + key;
 };
 
 $(document).ready(function(){
