@@ -82,7 +82,7 @@ var getEduCard = function (tag) {
 			$('#eduAfterPic').attr("src", "img/edu/" + edu.get('number') + "-after.jpg");
 			var tags = edu.get('tag');
 			for(var i=0; i<tags.length; i++){
-				$('#eduTags').append('<a href="transition_1.html?type=1&tag='+ tag[i] +'" class="btn btn-default">'+ tags[i] + '</a>');
+				$('#eduTags').append('<a href="transition_1.html?type=1&tag='+ tags[i] +'" class="btn btn-default">'+ tags[i] + '</a>');
 			}
 			$('#eduDescribe').text(edu.get('describe'));
 			$('#eduStepCounts').text(edu.get('steps').length);
