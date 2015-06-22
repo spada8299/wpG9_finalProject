@@ -66,6 +66,9 @@ var getEduCard = function (tag) {
 			$('#transTitle').text("化妝箱 - "+ tag);
 			var pro = proCardArray;
 			for(var i=0; i<pro.length; i++){
+				if(i%3===0 && i!==0){
+					$('#transBody').append('<div class="col-md-12"></div>');
+				}
 				var someText = '<div class="col-md-4 product-card">\
 					<h3>'+ pro[i].get('productname') +'</h3>\
 					<img src="img/product/'+ pro[i].get('productname') +'.jpg" class="pro-card-pic">\
@@ -279,6 +282,27 @@ var getEduCard = function (tag) {
 				$('#indexEduPic' + (i+1)).attr("src", "img/edu/"+ iEdu[i].get('number') +"-after.jpg");
 				$('#indexEduTitle' + (i+1)).text(iEdu[i].get('title'));
 				$('#indexEduDescribe' + (i+1)).text(iEdu[i].get('describe'));
+			}
+		},
+		error: function(error){
+			alert("error: " + error.message);
+		}
+	});
+}, getBeginEdu = function(){
+	var BeginEdu = Parse.Object.extend("education");
+	var query7 = new Parse.Query(BeginEdu);
+	query7.equalTo("easy", 1);
+	query7.find({
+		success: function(beginEduArray){
+			console.log(beginEduArray);
+			var bEdu = beginEduArray;
+			for(var i=0; i<3; i++){
+				$('#beginnerEdu').append('<div class="col-md-4">\
+						<a href="education_1.html?title='+ bEdu[i].get('title') +'">\
+							<img src="img/edu/'+ bEdu[i].get('number') +'-after.jpg" class="other-pic">\
+							<h5>'+ bEdu[i].get('title') +'</h5>\
+						</a>\
+					</div>');
 			}
 		},
 		error: function(error){
