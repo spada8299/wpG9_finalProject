@@ -2,11 +2,6 @@ a, a:hover {
 	text-decoration: none;
 }
 
-body {
-	font-family: "微軟正黑體", serif;
-	background: url("http://subtlepatterns.com/patterns/furley_bg.png");
-}
-
 .nav-inline>li{
 	display: inline;
 /*	padding: 0;
@@ -58,19 +53,15 @@ body {
 .mega-menu li {
 	display: inline-block;
 	float: left;
-	font-size: 1.5rem;
+	font-size: 0.94rem;
 	padding: 3px 0px;
 	color: #fff;
 	cursor: pointer;
 }
 
-li.mega-title {
-	font-size: 1.7rem;
-}
-
 .mega-menu li.mega-menu-column {
 	margin-right: 20px;
-	width: 120px;
+	width: 100px;
 }
 
 .mega-menu-column li {
@@ -127,8 +118,9 @@ li.nav-item>a {
 
 #eduBeforePic, #eduAfterPic {
 	width: 320px;
-	/*height: 500px;
-	border: 1px solid;*/
+	height: 420px;
+	border: 10px solid;
+	background-color: #FA8072;
 }
 
 .sm-square {
@@ -169,7 +161,7 @@ li.nav-item>a {
 }
 
 .other-pic {
-	width: 300px;
+	width: 200px;
 	/*height: 300px;*/
 }
 
@@ -180,7 +172,7 @@ li.nav-item>a {
 .edu-card:hover,
 .product-card:hover,
 .know-card:hover {
-	background-color: rgba(255, 0, 0, 0.1);
+	background-color: #F5F5F5;
 	border-radius: 1em;
 }
 
@@ -197,7 +189,7 @@ li.nav-item>a {
 }
 
 .know-card-pic {
-	width: 100%;
+	width: 540px;
 	/*height: 350px;*/
 	padding: 10px 0px;
 }
@@ -231,4 +223,35 @@ li.nav-item>a {
 	padding: 5px;
 	width: 20%;
 	border-radius: 0.5em;
+}
+
+#eduTitle{
+	font-size:3em;
+  	margin: 10 0 0px;
+  	outline: 0px;
+  	border: 0px;
+  	padding: .5px 10px 10px 0px;
+  	color:#FFF;
+}
+
+#eduTop{
+	border-radius:.5em;
+	background-color: #F08080;
+	  	color:#FFF;
+}
+
+hr{
+	margin-top: 0px;
+  	margin-bottom: 20px;
+  	border: 0;
+  	border-top: 1px solid #eee;
+}
+
+#eduEasy,#eduStepCounts{
+	color: #696969;
+}
+
+.body-describe{
+	outline: 1px dashed #fff;
+  	outline-offset: 10px;
 }
