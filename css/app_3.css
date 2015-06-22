@@ -58,15 +58,19 @@ body {
 .mega-menu li {
 	display: inline-block;
 	float: left;
-	font-size: 0.94rem;
+	font-size: 1.5rem;
 	padding: 3px 0px;
 	color: #fff;
 	cursor: pointer;
 }
 
+li.mega-title {
+	font-size: 1.7rem;
+}
+
 .mega-menu li.mega-menu-column {
 	margin-right: 20px;
-	width: 100px;
+	width: 120px;
 }
 
 .mega-menu-column li {

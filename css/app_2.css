@@ -35,7 +35,10 @@ nav {
 .nav-pic {
 	width: 120px;
 	height: 120px;
-	border: 1px solid;
+}
+
+.nav-pic:hover {
+	background-color: #444;
 }
 
 .logo-pic{
@@ -53,9 +56,9 @@ nav {
 	z-index: 999;
 	background-color: #444;
 	padding: 10px 0px;
-	width: 60%;
+	width: 70%;
 	margin-top: 0px;
-	margin-left: -20%;
+	margin-left: -30%;
 	display: none;
 }
 
@@ -66,18 +69,23 @@ nav {
 .mega-menu li {
 	display: inline-block;
 	float: left;
-	font-size: 0.94rem;
-	padding: 3px 0px;
+	font-size: 1.7rem;
+	padding: 5px 0px;
 	cursor: pointer;
 }
 
 .mega-menu li.mega-menu-column {
 	margin-right: 20px;
-	width: 100px;
+	width: 120px;
 }
 
 .mega-menu-column li {
 	display: block;
+}
+
+li.mega-title {
+	font-size: 2rem;
+	padding: 10px 0px;
 }
 
 .mega-title a{

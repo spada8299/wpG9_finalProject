@@ -317,6 +317,7 @@ $(document).ready(function(){
         },
         function() { $('.nav-dropdown-menu', this).fadeOut("fast");
     });
+    $('[data-toggle="tooltip"]').tooltip();
     $("#openAllProduct").on('click', function(){
     	$(".all-product").slideToggle('fast');
     });
