@@ -240,6 +240,11 @@ li.nav-item>a {
 	  	color:#FFF;
 }
 
+#proTop{
+	border-radius:.5em;
+	background-color: #FFFF4D;
+}
+
 hr{
 	margin-top: 0px;
   	margin-bottom: 20px;
