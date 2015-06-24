@@ -181,7 +181,7 @@ li.nav-item>a {
 }
 
 .other-pic {
-	width: 100%;
+	width: 80%;
 	padding-top: 10px;
 	/*height: 300px;*/
 }
@@ -276,7 +276,7 @@ li.nav-item>a {
 
 .proTop{
 	border-radius:.5em;
-	background-color: #FFFF4D;
+	background-color: rgb(34,181,115);
 }
 
 hr{
@@ -308,13 +308,13 @@ hr{
 }
 
 .begin-body {
-	background-color: rgba(255,255,255,1);
+	background-color: rgba(0,169,157,0.5);
 	border-radius: .5em;
 }
 
 .begin-step {
 	margin-top: 30px;
-	color: #A20055;
+	color: #fff;
 }
 
 .begin-step>p {
