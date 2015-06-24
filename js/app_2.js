@@ -410,7 +410,7 @@ $(document).ready(function(){
     	window.location = 'transition_1.html?type=3';
     });
     $('#eduNav').tooltip({title: "<h5>學化妝</h5><h6>Beauty Up將化妝教學文章分成了六個類別，分別為部位、場合、風格、色調、季節、臉型，希望能幫助您快速找到需要的教學文章哦！</h6>", html: true, placement: "right"});
-    $('#proNav').tooltip({title: "<h5>化妝箱</h5><h6></h6>", html: true, placement: "right"});
+    $('#proNav').tooltip({title: "<h5>化妝箱</h5><h6>點進去可以看到化妝產品的價錢、通路，以及最重要的──使用教學文哦！</h6>", html: true, placement: "right"});
     $('#knowNav').tooltip({title: "<h5>美知識</h5><h6>為什麼我都照著教學步驟做了，畫出來的樣子還是怪怪的啊？那是因為不同臉型都有不同的化妝技巧哦！更多化妝的精進術，都在化妝小常識裡等您一探究竟哦！</h6>", html: true, placement: "right"});
     $('#beginNav').tooltip({title: "<h5>新手上路</h5><h6>進入Beauty Up專門為還是新手的您準備的化妝教學文章！希望您能因此輕鬆學會化妝這件事。</h6>", html: true, placement: "right"});
 });
