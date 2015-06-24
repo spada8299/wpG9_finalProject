@@ -324,3 +324,8 @@ hr{
 .know-body {
 	color: #fff;
 }
+
+#proRight{
+	border-radius:.5em;
+	background-color: rgb(255, 255, 102);
+}
