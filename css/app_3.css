@@ -40,6 +40,10 @@ body {
 	height: 600px;
 }
 
+.edu, .pro {
+	cursor: pointer;
+}
+
 .mega-menu {
 	position: absolute;
 	z-index: 999;
@@ -292,13 +296,13 @@ hr{
 .trans-title1 {
 	background-color: #F08080;
 	border-radius: 0.3em;
-	padding: 10px;
+	padding: 10px 20px;
 }
 
 .trans-title2 {
 	background-color: #FFFF4D;
 	border-radius: 0.3em;
-	padding: 10px;
+	padding: 10px 20px;
 }
 
 .begin-body {

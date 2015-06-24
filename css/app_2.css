@@ -4,6 +4,7 @@ a, a:hover {
 
 body {
 	font-family: "微軟正黑體", serif;
+
 }
 
 .nav-inline>li{
@@ -17,11 +18,9 @@ body {
 	padding: 0;
 }
 
-/*.nav-dropdown-menu {
-	position: absolute;
-	z-index: 999;
-	display: none;
-}*/
+.edu, .pro {
+	cursor: pointer;
+}
 
 nav, .logo-pic {
 	top: 10px;
@@ -42,10 +41,10 @@ nav {
 	height: 100px;
 	margin-left: 12%;
 }
-
+/*
 .big-pic{
-	width: 900px;
-}
+	height: 400px;
+}*/
 
 .mega-menu {
 	position: absolute;
@@ -130,5 +129,5 @@ li.nav-item>a {
 #indexEduPic1,
 #indexEduPic2,
 #indexEduPic3 {
-	height: 500px;
+	height: 400px;
 }

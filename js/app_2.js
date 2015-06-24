@@ -19,7 +19,7 @@ var getEduCard = function (tag) {
 				if(i%2===0 && i!==0){
 					$('#transBody').append('<div class="col-md-12"></div>');
 				}
-				var someText = '<div class="col-md-5 edu-card">\
+				var someText = '<div class="col-md-6 edu-card">\
 					<div class="col-md-6">\
 						<img src="img/edu/'+ edu[i].get('number') +'-after.jpg" class="edu-card-pic">\
 					</div>\
@@ -69,7 +69,7 @@ var getEduCard = function (tag) {
 				if(i%3===0 && i!==0){
 					$('#transBody').append('<div class="col-md-12"></div>');
 				}
-				var someText = '<div class="col-md-3 product-card">\
+				var someText = '<div class="col-md-4 product-card">\
 					<h3>'+ pro[i].get('productname') +'</h3>\
 					<img src="img/product/'+ pro[i].get('productname') +'.jpg" class="pro-card-pic">\
 				</div>';
@@ -192,10 +192,10 @@ var getEduCard = function (tag) {
 			console.log(otherArray);
 			var other = otherArray;
 			for(var i=0; i<3; i++){
-				$('#eduOther').append('<div class="col-md-4">\
+				$('#eduOther').append('<div class="col-md-4 other-card">\
 					<a href="education_1.html?title='+ other[i].get('title') +'">\
 						<img src="img/edu/'+ other[i].get('number') +'-after.jpg" class="other-pic">\
-						<h5>'+ other[i].get('title') +'</h5>\
+						<h3>'+ other[i].get('title') +'</h3>\
 					</a>\
 				</div>');
 			}
@@ -225,7 +225,7 @@ var getEduCard = function (tag) {
 				$('#proToEdu').append('<div class="col-md-4">\
 						<a href="education_1.html?title='+ using[i] +'">\
 							<img src="img/edu/'+ usingNum[i] +'-after.jpg" class="other-pic">\
-							<h5>'+ using[i] +'</h5>\
+							<h3>'+ using[i] +'</h3>\
 						</a>\
 					</div>');
 			}
@@ -300,7 +300,7 @@ var getEduCard = function (tag) {
 				$('#beginnerEdu').append('<div class="col-md-4">\
 						<a href="education_1.html?title='+ bEdu[i].get('title') +'">\
 							<img src="img/edu/'+ bEdu[i].get('number') +'-after.jpg" class="other-pic">\
-							<h5>'+ bEdu[i].get('title') +'</h5>\
+							<h3>'+ bEdu[i].get('title') +'</h3>\
 						</a>\
 					</div>');
 			}
@@ -321,7 +321,7 @@ var getEduCard = function (tag) {
 				if(i%2===0 && i!==0){
 					$('#transBody').append('<div class="col-md-12"></div>');
 				}
-				var someText = '<div class="col-md-5 edu-card">\
+				var someText = '<div class="col-md-6 edu-card">\
 					<div class="col-md-6">\
 						<img src="img/edu/'+ edu[i].get('number') +'-after.jpg" class="edu-card-pic">\
 					</div>\
@@ -370,7 +370,7 @@ var getEduCard = function (tag) {
 				if(i%3===0 && i!==0){
 					$('#transBody').append('<div class="col-md-12"></div>');
 				}
-				var someText = '<div class="col-md-3 product-card">\
+				var someText = '<div class="col-md-4 product-card">\
 					<h3>'+ pro[i].get('productname') +'</h3>\
 					<img src="img/product/'+ pro[i].get('productname') +'.jpg" class="pro-card-pic">\
 				</div>';
@@ -411,5 +411,8 @@ $(document).ready(function(){
     });
     $('nav ul li.pro').on('click', function(){
     	window.location = 'transition_1.html?type=4';
-    })
+    });
+    $('#allEdu').on('click', function(){
+    	window.location = 'transition_1.html?type=3';
+    });
 });
