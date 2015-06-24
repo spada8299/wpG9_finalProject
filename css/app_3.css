@@ -349,5 +349,9 @@ hr{
 }
 #proRight{
 	border-radius:.5em;
-	background-color: rgb(255, 255, 102);
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#proPlace, #proPrice {
+	color: #006400;
 }
