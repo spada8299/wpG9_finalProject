@@ -4,6 +4,7 @@ a, a:hover {
 
 body {
 	font-family: "微軟正黑體", serif;
+	min-height: 900px;
 }
 
 .nav-inline>li{
@@ -77,6 +78,8 @@ body {
 }
 
 footer {
+	position: fixed;
+	bottom: 0px;
 	float: right;
 	background-color: #444;
 	opacity: 0.6;
@@ -180,8 +183,15 @@ li.nav-item>a {
 .edu-card:hover,
 .product-card:hover,
 .know-card:hover {
-	background-color: #F5F5F5;
+	background-color: rgba(255,255,255,0.5);
 	border-radius: 1em;
+	color: #000;
+}
+
+.edu-card,
+.product-card,
+.know-card {
+	color: #fff;
 }
 
 .edu-card-pic {
@@ -199,24 +209,30 @@ li.nav-item>a {
 .know-card-pic {
 	width: 80%;
 	/*height: 350px;*/
-	padding: 10px 0px;
+	padding: 20px 0px;
 }
 
 .pro-bg-pic {
 	width: 100%;
+	padding: 10px;
 	/*height: 500px;*/
 }
 
 .pro-sm-pic {
-	width: 33%;
+	width: 100%;
+	padding: 10px 0px;
 }
 
 .right {
 	float: right;
 }
 
+.white {
+	color: #fff;
+}
+
 .step-cnt{
-	background-color: #444;
+	background-color: #E65C5C;
 	color: #fff;
 	font-size: 24px;
 	padding: 5px;
@@ -225,7 +241,7 @@ li.nav-item>a {
 }
 
 .step-cnt-f{
-	background-color: #444;
+	background-color: #E65C5C;
 	color: #fff;
 	font-size: 24px;
 	padding: 5px;
@@ -242,13 +258,13 @@ li.nav-item>a {
   	color:#FFF;
 }
 
-#eduTop{
+.eduTop{
 	border-radius:.5em;
 	background-color: #F08080;
 	  	color:#FFF;
 }
 
-#proTop{
+.proTop{
 	border-radius:.5em;
 	background-color: #FFFF4D;
 }
@@ -267,4 +283,16 @@ hr{
 .body-describe{
 	outline: 1px dashed #fff;
   	outline-offset: 10px;
+}
+
+.trans-title1 {
+	background-color: #F08080;
+	border-radius: 0.3em;
+	padding: 10px;
+}
+
+.trans-title2 {
+	background-color: #FFFF4D;
+	border-radius: 0.3em;
+	padding: 10px;
 }
