@@ -46,7 +46,7 @@ body {
 	background-color: #444;
 	padding: 10px 0px;
 	width: 65%;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-left: 0px;
 	display: none;
 }
@@ -58,7 +58,7 @@ body {
 .mega-menu li {
 	display: inline-block;
 	float: left;
-	font-size: 0.94rem;
+	font-size: 1.5rem;
 	padding: 3px 0px;
 	color: #fff;
 	cursor: pointer;
@@ -66,7 +66,7 @@ body {
 
 .mega-menu li.mega-menu-column {
 	margin-right: 20px;
-	width: 100px;
+	width: 120px;
 }
 
 .mega-menu-column li {
@@ -75,6 +75,10 @@ body {
 
 .mega-title a{
 	color: #FFDDAA;
+}
+
+li.mega-title {
+	font-size: 1.7rem;
 }
 
 footer {
@@ -295,4 +299,18 @@ hr{
 	background-color: #FFFF4D;
 	border-radius: 0.3em;
 	padding: 10px;
+}
+
+.begin-body {
+	background-color: rgba(255,255,255,1);
+	border-radius: .5em;
+}
+
+.begin-step {
+	margin-top: 30px;
+	color: #A20055;
+}
+
+.begin-step>p {
+	font-size: 1.9rem;
 }
