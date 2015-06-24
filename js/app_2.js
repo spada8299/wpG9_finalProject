@@ -222,7 +222,7 @@ var getEduCard = function (tag) {
 			var using = pro.get('using');
 			var usingNum = pro.get('using_num');
 			for(var i=0; i<using.length; i++){
-				$('#proToEdu').append('<div class="col-md-4">\
+				$('#proToEdu').append('<div class="col-md-4 other-card">\
 						<a href="education_1.html?title='+ using[i] +'">\
 							<img src="img/edu/'+ usingNum[i] +'-after.jpg" class="other-pic">\
 							<h3>'+ using[i] +'</h3>\
@@ -297,7 +297,7 @@ var getEduCard = function (tag) {
 			console.log(beginEduArray);
 			var bEdu = beginEduArray;
 			for(var i=0; i<3; i++){
-				$('#beginnerEdu').append('<div class="col-md-4">\
+				$('#beginnerEdu').append('<div class="col-md-4 other-card">\
 						<a href="education_1.html?title='+ bEdu[i].get('title') +'">\
 							<img src="img/edu/'+ bEdu[i].get('number') +'-after.jpg" class="other-pic">\
 							<h3>'+ bEdu[i].get('title') +'</h3>\
@@ -405,12 +405,6 @@ $(document).ready(function(){
     	// key = decodeURI(key);
       // console.log(key);
     	window.location = 'transition_1.html?type=2&tag=' + key;
-    });
-    $('nav ul li.edu').on('click', function(){
-    	window.location = 'transition_1.html?type=3';
-    });
-    $('nav ul li.pro').on('click', function(){
-    	window.location = 'transition_1.html?type=4';
     });
     $('#allEdu').on('click', function(){
     	window.location = 'transition_1.html?type=3';

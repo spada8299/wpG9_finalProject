@@ -40,7 +40,9 @@ body {
 	height: 600px;
 }
 
-.edu, .pro {
+.edu, .pro,
+.edu-card,
+.product-card {
 	cursor: pointer;
 }
 
@@ -86,7 +88,6 @@ li.mega-title {
 }
 
 footer {
-	position: fixed;
 	bottom: 0px;
 	float: right;
 	background-color: #444;
@@ -180,7 +181,8 @@ li.nav-item>a {
 }
 
 .other-pic {
-	width: 200px;
+	width: 100%;
+	padding-top: 10px;
 	/*height: 300px;*/
 }
 
@@ -317,4 +319,8 @@ hr{
 
 .begin-step>p {
 	font-size: 1.9rem;
+}
+
+.know-body {
+	color: #fff;
 }
