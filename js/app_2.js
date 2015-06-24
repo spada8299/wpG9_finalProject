@@ -309,6 +309,79 @@ var getEduCard = function (tag) {
 			alert("error: " + error.message);
 		}
 	});
+}, getAllEdu = function () {
+	var AllEdu = Parse.Object.extend("education");
+	var query8 = new Parse.Query(AllEdu);
+	query8.find({
+		success: function(EduArray){
+			console.log(EduArray);
+			var edu = EduArray;
+			$('#transTitle').text("學化妝");
+			for(var i=0; i<edu.length; i++){
+				if(i%2===0 && i!==0){
+					$('#transBody').append('<div class="col-md-12"></div>');
+				}
+				var someText = '<div class="col-md-5 edu-card">\
+					<div class="col-md-6">\
+						<img src="img/edu/'+ edu[i].get('number') +'-after.jpg" class="edu-card-pic">\
+					</div>\
+					<div class="col-md-6">\
+						<h3>'+ edu[i].get('title') +'</h3>\
+						<table class="table table-condensed">\
+					    <tbody>\
+					      <tr>\
+					        <th>步驟</th>\
+					        <td>'+ edu[i].get('steps').length +'</td>\
+					       </tr>\
+					       <tr>\
+					        <th>難易度</th>\
+					        <td>'+ getStar(edu[i].get('easy')) +'</td>\
+					      </tr>\
+					      <tr>\
+					        <th>適合</td>\
+					        <td>'+ edu[i].get('skin') +'<br>'+ edu[i].get('faceshape') +'<br>'+ edu[i].get('eyestyle') +'</td>\
+					      </tr>\
+					      <tr>\
+					      	<th>所屬類別</th>\
+					      	<td>'+ edu[i].get('tag') +'</td>\
+					      </tr>\
+					    </tbody>\
+					  </table>\
+				  </div>\
+				</div>';
+     			var newDiv = $(someText).click(edu[i].get('title'), toEdu);
+				$('#transBody').append(newDiv);
+			}
+		},
+		error: function(error){
+			alert("error: " + error.message);
+		}
+	});
+}, getAllPro = function () {
+	var Product = Parse.Object.extend("product");
+	var query3 = new Parse.Query(Product);
+	query3.find({
+		success: function(proCardArray){
+			// alert('success!');
+			console.log(proCardArray);
+			$('#transTitle').text("化妝箱");
+			var pro = proCardArray;
+			for(var i=0; i<pro.length; i++){
+				if(i%3===0 && i!==0){
+					$('#transBody').append('<div class="col-md-12"></div>');
+				}
+				var someText = '<div class="col-md-3 product-card">\
+					<h3>'+ pro[i].get('productname') +'</h3>\
+					<img src="img/product/'+ pro[i].get('productname') +'.jpg" class="pro-card-pic">\
+				</div>';
+     			var newDiv = $(someText).click(pro[i].get('productname'), toPro);
+				$('#transBody').append(newDiv);
+			}
+		},
+		error: function(error){
+			alert("error:" + error.message);
+		}
+	});
 };
 
 $(document).ready(function(){
@@ -333,4 +406,10 @@ $(document).ready(function(){
       // console.log(key);
     	window.location = 'transition_1.html?type=2&tag=' + key;
     });
+    $('nav ul li.edu').on('click', function(){
+    	window.location = 'transition_1.html?type=3';
+    });
+    $('nav ul li.pro').on('click', function(){
+    	window.location = 'transition_1.html?type=4';
+    })
 });
