@@ -4,7 +4,7 @@ a, a:hover {
 
 body {
 	font-family: "微軟正黑體", serif;
-	min-height: 900px;
+	min-height: 800px;
 }
 
 .nav-inline>li{
@@ -133,11 +133,11 @@ li.nav-item>a {
 }
 
 .body-describe {
-	margin-top: 100px;
+	margin-top: 180px;
 }
 
 #eduBeforePic, #eduAfterPic {
-	width: 320px;
+	width: 120%;
 	height: 420px;
 	border: 10px solid;
 	background-color: #FA8072;
@@ -192,7 +192,8 @@ li.nav-item>a {
 
 .edu-card:hover,
 .product-card:hover,
-.know-card:hover {
+.know-card:hover,
+.other-card:hover {
 	background-color: rgba(255,255,255,0.5);
 	border-radius: 1em;
 	color: #000;
@@ -277,6 +278,7 @@ li.nav-item>a {
 .proTop{
 	border-radius:.5em;
 	background-color: rgb(34,181,115);
+	padding: 20px 0px;
 }
 
 hr{
@@ -322,9 +324,29 @@ hr{
 }
 
 .know-body {
+	color: #111;
+	background-color: rgba(255,255,77,1);
+	border-radius: .5em;
+}
+
+.other-card {
+	color: #fff;
+	border: 1px;
+	border-radius: .5em;
+}
+
+.other-card a {
 	color: #fff;
 }
 
+.abus-pic {
+	opacity: 0.5;
+	width: 100%;
+}
+
+.abus-body {
+	color: rgba(255,255,255,0.2);
+}
 #proRight{
 	border-radius:.5em;
 	background-color: rgb(255, 255, 102);
