@@ -104,6 +104,10 @@ footer a {
 	color: #fff;
 }
 
+footer>ul {
+	float: right;
+}
+
 nav.nav_3 {
 	height: 100px;
 	background-color: #444;

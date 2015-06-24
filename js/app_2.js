@@ -19,7 +19,7 @@ var getEduCard = function (tag) {
 				if(i%2===0 && i!==0){
 					$('#transBody').append('<div class="col-md-12"></div>');
 				}
-				var someText = '<div class="col-md-6 edu-card">\
+				var someText = '<div class="col-md-5 edu-card">\
 					<div class="col-md-6">\
 						<img src="img/edu/'+ edu[i].get('number') +'-after.jpg" class="edu-card-pic">\
 					</div>\
@@ -69,7 +69,7 @@ var getEduCard = function (tag) {
 				if(i%3===0 && i!==0){
 					$('#transBody').append('<div class="col-md-12"></div>');
 				}
-				var someText = '<div class="col-md-4 product-card">\
+				var someText = '<div class="col-md-3 product-card">\
 					<h3>'+ pro[i].get('productname') +'</h3>\
 					<img src="img/product/'+ pro[i].get('productname') +'.jpg" class="pro-card-pic">\
 				</div>';
